@@ -1,0 +1,32 @@
+[[ch04]]
+[[intro]]
+== Bitcoin Explained
+
+[[ch04_intro]]
+=== Transacciones: Claves publicas y privadas
+
+Las transacciones son el metodo de intercambio de valor dentro del blockchain. El manejo de transacciones es muy complicado para cubrirlo en este capitulo pero basta entender el concepto de claves publicas y privadas para entender como funcionan las transacciones.
+
+La clave Privada permite a un usuario 'gastar' los bitcoins mientras que la clave publica permite a un usuario 'recibir' bitcoins. Notese que las 'Addresses' para los usuarios son variaciones de la clave privada. Por ejemplo:
+
+1LoLwfa5r326kYgAXjSHRLm35RTLwaBS1j
+
+Lo que se ve arriba es una direccion publica que puede recibir bitcoins. Las direcciones publicas sirven para recibir BTC, y notese tambien que no hay peligro de que alguien posea este address para mandar bitcoins. Es como tu direccion de correo. Todos la pueden tener, de hecho es publica pero la llave de la puerta de casa (la clave privada) esta en tu control y nadie la tiene.
+
+Y lo que es mas importante es que la clave publica no sirve para derivar la clave privada. 
+
+Otra cosa importante es que la direccion arriba es una variante de una clave publica. En realidad es un hash y otros procesos para llegar a ese valor. Ahora una pregunta es ¿Ya que la direccion publica y privada son independientes como sabemos a que cuenta agregar los fondos que fueron enviados a la direccion publica?
+
+La respuesta es que los fondos estan asignados a la direccion publica. No hay ninguna caja ni cuenta mas allá de la direccion publica en la que los fondos estan. Solo la clave privada sirve para usar esos fondos en otra transaccion. Solo la clave privada puede firmar las transaccion para abrir los fondos.
+
+=== Wallets
+
+Las wallets pueden venir en varias encarnaciones:
+
+- Papel: Estas wallets tienen 1 sola direccion publica y por ende son inhackeables pero al mismo tiempo faciles de rastrear en el blockchain.
+
+- Hardware: Estas wallets tienen varias direcciones publicas y privadas. Las direcciones privadas (y publicas) estan almacenadas acá asi que representan una seguridad fisica de proteccion.
+
+- Software: Hackeables si, pero las mas practicase de usar. El proyecto de bitcoin.org viene con su propia wallet con multiples claves privadas y publicas. Su seguridad esta dada por el nivel de seguridad de la computador en la que reciden.
+
+- Web-site: Hay sitios web que manejan wallets para sus clientes, con el problema que si el sitio web es hackeado todas las claves privadas se pierden y con ello los bitcoin.

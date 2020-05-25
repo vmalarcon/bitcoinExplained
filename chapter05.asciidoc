@@ -1,0 +1,6 @@
+[[ch05]]
+[[intro]]
+== Bitcoin Explained
+
+[[ch05_intro]]
+=== Creacion de bitcoin y minado

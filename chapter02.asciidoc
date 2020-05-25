@@ -1,0 +1,58 @@
+[[ch02]]
+[[intro]]
+== Bitcoin Explained
+
+[[ch02_intro]]
+=== Que es el Dinero?
+
+En este capitulo quiero explicar lo que es el dinero. Es un concepto muy simple. Un niño de 10 años tendria que poder entenderlo, pero no es enseñado en la escuela. Podemos especular siglos y no llegar a una conclusion del porque pero es asi. Asi que vamos a explicarlo ahora.
+
+El dinero es un medio para intercambiar valor entre dos personas. Es eso. Simple y directo. Lo complicado es explicar o entender que es 'intercambiar valor'. Valor es algo valioso para alguien. Es una cuestion subjetiva como una mercancia o un servicio.
+
+Un exemplo de valor seria, una bolsa de harina. El que tiene una bolsa de harina de mas quiere intercambiarla por otra cosa. Que alguien le corte el pasto en su casa. Sin embargo, hacer un trueque (es decir una bolsa de harina por una cortada de pasto) no es conveniente. Que pasa si por ejemplo, cortar el pasto es 1/100 de una bolsa de harina. Hay que hacer un trueque por 1/100 de una bolsa de harina. Y ahi empieza a verse las propiedades del valor (o el dinero).
+
+A continuacion explicamos las propiedades de 'valor'. Para intercambiar valor eficientemente necesitamos las siguientes propiedades:
+
+- Fungible:
+
+ > Una unidad es intercambiable con otra
+
+- Durable:
+
+ > No se echa a perder facilmente. 
+
+- Divisible:
+
+ > Una unidad se puede dividir facilmente
+
+- Portable:
+
+ > Una persona lo puede llevar facilmente
+
+- Aceptable:
+
+ > Es de facil intercambio porque es de facil intercambio
+
+- Escaso:
+
+ > Hay poco y no es facil crear mas
+
+- Uniforme:
+
+ > Todo el dinero que tiene la misma denominacion se puede usar indistintamente
+
+Todas estas propiedades son importantes. Por ejemplo, la sal, durante un tiempo de la historia fue usado como dinero. Si vamos a traves de las propiedades podemos constatar que cumple varias de ellas. No otras y es por eso que no es usado actualmente como dinero. En el caso de la sal, por ejemplo, la propiedad durable (Que pasa si se moja?) y escasez (Hay lugares donde hay tanta sal que le quita valor) tienen problemas.
+
+Es por eso que eventualmente las sociedades mas avanzadas gravitaron hacia el oro y la plata como valor. De nuevo, usar oro y plata servia como dinero pero tenia problemas con la propiedad portable (Como transportamos 100 kg de oro? Y como lo protegemos?).
+
+Una manera de resolver el problema de la portabilidad fue la introduccion de bancos. Instituciones que emitian unos papeles y certificaban que eran convertibles a oro o plata. Y en ese momento el problema de portabilidad fue solucionado. Pero se introdujo otro problema que fue el de la confianza. Los bancos se dieron cuenta que podian emitir mas papelitos porque la gente no reclamaba su oro en todo momento. Entonces los bancos emitieron papelitos que no estaban respaldados en oro. Es riesgoso actuar asi, pero les permite a los bancos generar mas certificados de oro y plata. Basicamente 'crear' mas oro ficticiamente. Pero que pasa si todos los que tienen papelitos deciden sacar su oro al mismo tiempo. El banco en este momento no puede dar el oro a cada poseedor de un certificado.
+
+El siguiente paso en la evolucion de los bancos y el dinero es el FIAT. Dinero que no esta respaldado por 'nada' pero sirve para pagar impuestos. Dinero respaldado por un gobierno. Es la razon principal, en mi opinion, por la cual el concepto del dinero no se enseña mas. Si la gente en general supiera como funciona el dinero habria una u otra rebelion este mundo.
+
+La cuestion importante es que el dinero FIAT esta controlado por el banco central de cada pais y es el responsable de la emision de dinero en el pais. Es el banco central quien decide emitir mas dinero que supuestamente tiene que circular por todo el sistema economico del pais pero que en ultimo termino causa un exceso de papeles en el sistema quitandole el valor a todos los papeles en existencia.
+
+Y aqui esta la primera razon por la existencia de Bitcoin. La emision monetaria es sabida desde ahora y va a llegar a un tope de 21 millon de bitcoins (BTC). No hay ningun gobierno que la controla por ende ningun gobierno tiene el poder de emitir BTC para satisfacer sus necesidades.
+
+La segunda razon es la naturaleza global de BTC. Para que alguien controle bitcoin tendria que controlar todos los mineros del mundo. Es posible, pero es involucraria una conspiracion tan grande que en este momento la podemos calificar de imposible.
+
+La tercera razon es la distribucion de los mineros, los entes responsable por la creacion de los bloques. Distribuidos por todo el mundo y muy dificil (no imposible). Esta y la segunda razon son similares pero referencian el tema que nadie esta en control de la mineria tampoco. Para mas datos ver: https://www.blockchain.com/pools
