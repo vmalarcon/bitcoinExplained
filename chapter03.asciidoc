@@ -5,11 +5,11 @@
 [[ch02_intro]]
 === Blockchain y hashes
 
-En este capitulo hablaremos del blockchain. Y de los hashes.
+En este capítulo hablaremos del blockchain. Y de los hashes.
 
-El blockchain es una base de datos donde se guardan todas las transacciones con bitcoin. Como es una base de datos abierta a la internet cualquiera la podria modificar o jackear. Es por eso que esta base de datos en particular tiene que ser muy dificil de cambiar. Y cuando digo muy dificil de cambiar me refiero para una computadora o para un grupo de computadoras.
+El blockchain es una base de datos donde se guardan todas las transacciones con bitcoin. Como es una base de datos abierta a la internet cualquiera la podría modificar o jackear. Es por eso que esta base de datos en particular tiene que ser muy difícil de cambiar. Y cuando digo muy difícil de cambiar me refiero para una computadora o para un grupo de computadoras.
 
-Al mismo tiempo tiene que ser publica. Asi que un problema grande que tiene que resolver bitcoin es hacer algo publico y muy dificil de cambiar. Ahora vemos como.
+Al mismo tiempo tiene que ser publica. Así que un problema grande que tiene que resolver bitcoin es hacer algo publico y muy difícil de cambiar. Ahora vemos como.
 
 El blockchain esta compuesto por documentos de texto. En su base el documento tiene la siguiente estructura:
 
@@ -22,17 +22,17 @@ Nonce: 001
 ...
 ----
 
-Aca hay que hacer un parentesis para comprender que es un hash. Es una funcion que es muy facil calcular en un sentido:
+Acá hay que hacer un paréntesis para comprender que es un hash. Es una función que es muy fácil calcular en un sentido:
 
 hashValue = f_hash(Texto)
 
-Pero es muy dificil calcular en el sentido inverso. Es decir que es facil calcular el hashValue de un texto cualquiera. Pero es imposible calcular qué texto produciria un valor especifico de un hash. Y en eso se basa el minado, un problema muy tedioso de calcular un hash especifico dado un bloque para agregar al blockchain.
+Pero es muy difícil calcular en el sentido inverso. Es decir que es fácil calcular el hashValue de un texto cualquiera. Pero es imposible calcular qué texto produciría un valor especifico de un hash. Y en eso se basa el minado, un problema muy tedioso de calcular un hash especifico dado un bloque para agregar al blockchain.
 
-Cada bloque esta ligado al anterior porque cada bloque nuevo referencia al bloque anterior. Anterior acá denomina a la dimension tiempo.
+Cada bloque esta ligado al anterior porque cada bloque nuevo referencia al bloque anterior. Anterior acá denomina a la dimensión tiempo.
 
-El hash del bloque actual hace referencia al hash del bloque anterior en la cadena. El hash del bloque es el hash de este bloque. Vale notar que si el bloque anterior es cambiado su hash tambien es diferente lo que significa que este bloque tambien tiene que ser recalculado. Y ahi esta la primera virtud (o prestacion) del blockchain. Cambiar un bloque significa cambiar todos los bloques subsiguientes lo cual dependiendo del cambio puede significar muchos.
+El hash del bloque actual hace referencia al hash del bloque anterior en la cadena. El hash del bloque es el hash de este bloque. Vale notar que si el bloque anterior es cambiado su hash también es diferente lo que significa que este bloque también tiene que ser recalculado. Y ahí esta la primera virtud (o prestación) del blockchain. Cambiar un bloque significa cambiar todos los bloques subsiguientes lo cual dependiendo del cambio puede significar muchos.
 
-El segundo hecho es que el hash tiene que comenzar on 0s. Cuantos ceros va a depender de la dificultad que la red designa y ajusta cada 4?? horas.
+El segundo hecho es que el hash tiene que comenzar con 0s. Cuantos ceros va a depender de la dificultad que la red designa y ajusta cada 4?? horas.
 
 Acá hay un bloque para lo examinar: https://whatsonchain.com/block-height/635310
 
@@ -42,9 +42,9 @@ Como se ve ese bloque es:
 0000000000000000005fe4b0f644a39ccf8e8ceac95fc84fa67435e7e969ab44
 ----
 
-Es asi como se identifica un block con su hash. Ahora tomemos un tiempo para ver que cuando comenzamos a analizar el bloque no sabemos que hash va a tener solo sabemos que tiene que empezar con una serie de ceros que esta dada por la dificultad.
+Es así como se identifica un block con su hash. Ahora tomemos un tiempo para ver que cuando comenzamos a analizar el bloque no sabemos que hash va a tener solo sabemos que tiene que empezar con una serie de ceros que esta dada por la dificultad.
 
-El hash es una variante de los hashes tipicos que son publicos por ahi. Por ejemplo git usa SHA1 para hashear sus bloques. En el caso de bitcoin es una combinacion de hashes. Para entender lo dificil que es encontrar este hash que empieza con ceros hagase la siguiente experiencia:
+El hash es una variante de los hashes típicos que son públicos por ahí. Por ejemplo git usa SHA1 para hashear sus bloques. En el caso de bitcoin es una combinación de hashes. Para entender lo difícil que es encontrar este hash que empieza con ceros hágase la siguiente experiencia:
 
 - Ve a este sitio: https://www.fileformat.info/tool/hash.htm
 
@@ -52,21 +52,59 @@ El hash es una variante de los hashes tipicos que son publicos por ahi. Por ejem
 Esto es una prueba - nonce: 00001
 ----
 
-Al apretar el boton hash. Un numero de hashes aparecen abajo:
+Al apretar el botón hash. Un numero de hashes aparecen abajo:
 
 ----
 SHA-1	8141c169888144eafad4c6979cc628532b1c8460
 SHA-256	b2d9d3ee828b599e0b1f31c060bccb3c3f9b6e0c77e337d73eace0df59479cc3
 ----
 
-Ahora incrementese el valor del nonce en el texto de arriba hasta que el hash comience con un cero, o dos, o siete, dependiendo de la dificultad. No voy a esperar que termines o que encuentres el bloque que empiece con 1 cero siquiera. Es una tarea especialmente obtusa pero su principal objetivo es que le cueste mucho a una computadora realizarlo.
+Ahora increméntese el valor del nonce en el texto de arriba hasta que el hash comience con un cero, o dos, o siete, dependiendo de la dificultad. No voy a esperar que termines o que encuentres el bloque que empiece con 1 cero siquiera. Es una tarea especialmente obtusa pero su principal objetivo es que le cueste mucho a una computadora realizarlo.
 
-De otra manera, encuentrese un texto que de por SHA-1 uno que empiece por ceros. 
+De otra manera, encuéntrese un texto que de por SHA-1 uno que empiece por ceros. 
 
-Afortunadamente el SHA-1 es una funcion en un sentido. Es decir, es facil calcularla en un sentido Texto -> SHA-1. Es imposible (o muy dificil) en el sentido opuesto SHA-1 -> Texto (nonce). Es decir, dado un hash buscado que texto seria viable para ese hash.
+Afortunadamente el SHA-1 es una función en un sentido. Es decir, es fácil calcularla en un sentido Texto -> SHA-1. Es imposible (o muy difícil) en el sentido opuesto SHA-1 -> Texto (nonce). Es decir, dado un hash buscado que texto seria viable para ese hash.
 
-Es entonces la manera mas facil de calcular el hash con el nonce. Es decir vamos incrementando el nonce hasta que el hash resultante empieza con la cantidad requerida de ceros. 
+Es entonces la manera mas fácil de calcular el hash con el nonce. Es decir vamos incrementando el nonce hasta que el hash resultante empieza con la cantidad requerida de ceros. 
 
-Verificar un SHA-1 es una cuestion trivial una vez que el nonce es conocido. Es decir una vez que tenemos el bloque entero es trivial calcular el hash y verificar que empieza con n ceros.
+Verificar un SHA-1 es una cuestión trivial una vez que el nonce es conocido. Es decir una vez que tenemos el bloque entero es trivial calcular el hash y verificar que empieza con n ceros.
 
-Donde digo SHA-1 es en realidad una amalgama de otros hashes y combinacion de varios en realidad. Los hashes son entidades usadas para criptografia asi que tienen usos mas importantes que el bitcoin. Son al mismo tiempo constantemente atacadas para encontrar debilidades. Por eso la idea es combinar varios hashes por si uno de ellos es debil no es el unico en utilizacion.
+Donde digo SHA-1 es en realidad una amalgama de otros hashes y combinación de varios en realidad. Los hashes son entidades usadas para criptografía así que tienen usos mas importantes que el bitcoin. Son al mismo tiempo constantemente atacadas para encontrar debilidades. Por eso la idea es combinar varios hashes por si uno de ellos es débil no es el único en utilización.
+
+=== Que son los Hashes
+
+Vamos a explicar que son los hashes. Un ejemplo del pasado mas simplificado pero sin llegar a la sobre simplificación, es el digito de verificación en los códigos de barra. Es una variante muy básica de los hashes pero sirve el mismo propósito.
+
+Los códigos de barra son una representación en forma grafica (barras) que son números. Pero como toda representación grafica hay que hacerlos resistir cambios ya sean estos queridos o accidentales.
+
+Por ejemplo. Supongamos que tenemos el siguiente código:
+
+   123456789
+
+Un código de nueve cifras que representa un producto cualquiera en un supermercado. Ahora la pregunta es: ¿Qué pasaría si alguna parte del código es ilegible? ¿Cómo hacemos para garantizar que el código que estamos leyendo es valido?
+
+Agregamos el digito de verificación aparece como solución a este tema. Supongamos el siguiente calculo:
+ 
+   1+2+3+4+5+6+7+8+9 = 45
+   45 / 11 =  4.09...
+   ceiling(4.09) = 5
+
+Ahora tomamos la parte entera del resultado y tenemos:
+
+   123456789 5
+
+El código es el mismo pero el digito de verificación esta ahí para asegurarnos que el código es valido. Si el calculo del digito de validación da otro valor sabemos que el código es ilegible o ha sido modificado.
+
+Por ejemplo. Si cambiamos alguna parte del código, también cambiamos el digito de verificación:
+
+   113456789 5 ?
+
+El calculo del digito de verificación no concuerda con los valores nuevos (nótese que el dos fue cambiado por un tres).
+
+   1+1+3+4+5+6+7+8+9 = 44
+   44 / 11 = 4
+   ceiling(4) = 4
+
+Este ejemplo nos indica que el código terminado con cinco es de alguna manera invalido. Quiere decir que si estamos leyendo un código de barra con estas características no podemos estar seguros de donde esta el error. 
+
+De la misma manera el hash es como un digito de verificación del bloque entero.

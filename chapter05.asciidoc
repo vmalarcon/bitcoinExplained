@@ -3,9 +3,9 @@
 == Bitcoin Explained
 
 [[ch05_intro]]
-=== Applicaciones de bitcoin
+=== Aplicaciones de bitcoin
 
-En este capitulo hablaremos de algunas applicaciones de la tecnologia de bitcoin que no necesariamente implican comprar bitcoin para tener sino para realizar algun otro tipo de transaccion.
+En este capitulo hablaremos de algunas aplicaciones de la tecnología de bitcoin que no necesariamente implican comprar bitcoin para tener sino para realizar algún otro tipo de transaccion.
 
 ==== Transferencia de dinero
 

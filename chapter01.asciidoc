@@ -5,19 +5,19 @@
 [[ch01_intro]]
 === Introduccion
 
-Trataré de explicar (como yo lo entiendo) que es bitcoin y como funciona. Como se utilizan muchas otras tecnologias haré referencia a ellas cuando sea necesario pero si alguna de ellas causa dudas es importante dejar de leer y apprender el otro concepto antes de seguir.
+Trataré de explicar (como yo lo entiendo) que es bitcoin y como funciona. Como se utilizan muchas otras tecnologías haré referencia a ellas cuando sea necesario pero si alguna de ellas causa dudas es importante dejar de leer y aprender el otro concepto antes de seguir.
 
-Bitcoin es mas de lo que hablare a continuacion. Si algun concepto no queda claro o necesita mas explicacion por favor haganmelo saber y completaré y aprenderé yo tambien para mejorar este libro.
+Bitcoin es mas de lo que hablare a continuación. Si algún concepto no queda claro o necesita mas explicación por favor háganmelo saber y completaré y aprenderé yo también para mejorar este libro.
 
-En el segundo capitulo hablaremos del dinero. Que és el dinero? Las propiedades del dinero y un poco de historia. Pero el uso del dinero es tan viejo que vuelve miles de años en el pasado!
+En el segundo capitulo hablaremos del dinero. Que es el dinero? Las propiedades del dinero y un poco de historia. Pero el uso del dinero es tan viejo que vuelve miles de años en el pasado!
 
-En el tercer capitulo hablaremos del blockchain. Qué es? y porque es de la manera que es. Tambien tocaremos el tema del hashing. La principal tecnologia que lo permite.
+En el tercer capitulo hablaremos del blockchain. Qué es? y porque es de la manera que es. También tocaremos el tema del hashing. La principal tecnología que lo permite.
 
-En el cuarto capitulo hablaremos de transacciones y de claves publicas y privadas. La tecnologia que lo permite.
+En el cuarto capitulo hablaremos de transacciones y de claves publicas y privadas. La tecnología que lo permite.
 
-En el quinto capitulo hablaremos de bitcoin y su modelo de emision monetaria. Y quien 'controla' el bitcoin. Quien lo emite, como se 'mina' el bitcoin.
+En el quinto capitulo hablaremos de bitcoin y su modelo de emisión monetaria. Y quien 'controla' el bitcoin. Quien lo emite, como se 'mina' el bitcoin.
 
-En el sexto y final capitulo hablaremos de algunas conclusiones finales y ataremos los cabos de los capitulos anteriores.
+En el sexto y final capitulo hablaremos de algunas conclusiones finales y ataremos los cabos de los capítulos anteriores.
 
 
 
