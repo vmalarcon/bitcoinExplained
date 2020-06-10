@@ -3,4 +3,12 @@
 == Bitcoin Explained
 
 [[ch05_intro]]
-=== Creacion de bitcoin y minado
+=== Applicaciones de bitcoin
+
+En este capitulo hablaremos de algunas applicaciones de la tecnologia de bitcoin que no necesariamente implican comprar bitcoin para tener sino para realizar algun otro tipo de transaccion.
+
+==== Transferencia de dinero
+
+==== Compra de BTC en un sitio web
+
+==== HODL
